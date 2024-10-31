@@ -32,7 +32,7 @@ public class Combo implements Producto
     {
         this.itemsCombo = new ArrayList<>( items );
         this.nombreCombo = nombre;
-        this.descuento = descuento;
+        this.setDescuento(descuento);
     }
 
     @Override
@@ -55,7 +55,7 @@ public class Combo implements Producto
             precio += i.getPrecio( );
         }
 
-        return ( int ) ( precio * descuento );
+        return ( int ) ( precio * getDescuento() );
     }
 
     /**
@@ -68,10 +68,18 @@ public class Combo implements Producto
     {
         StringBuffer sb = new StringBuffer( );
         sb.append( "Combo " + nombreCombo + "\n" );
-        sb.append( " Descuento: " + descuento + "\n" );
+        sb.append( " Descuento: " + getDescuento() + "\n" );
         sb.append( "            " + getPrecio( ) + "\n" );
 
         return sb.toString( );
     }
+
+	public double getDescuento() {
+		return descuento;
+	}
+
+	public void setDescuento(double descuento) {
+		this.descuento = descuento;
+	}
 
 }
