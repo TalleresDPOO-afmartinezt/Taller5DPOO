@@ -1,11 +1,13 @@
 package uniandes.dpoo.hamburguesas.tests;
+
+import static org.junit.jupiter.api.Assertions.*;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import uniandes.dpoo.hamburguesas.mundo.Combo;
 import uniandes.dpoo.hamburguesas.mundo.ProductoMenu;
 
-import static org.junit.jupiter.api.Assertions.*;
 import java.util.ArrayList;
 
 

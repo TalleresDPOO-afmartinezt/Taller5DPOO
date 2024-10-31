@@ -1,5 +1,6 @@
 package uniandes.dpoo.hamburguesas.tests;
 
+import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -7,7 +8,6 @@ import uniandes.dpoo.hamburguesas.mundo.Pedido;
 import uniandes.dpoo.hamburguesas.mundo.Producto;
 import uniandes.dpoo.hamburguesas.mundo.ProductoMenu;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 import java.io.File;
 import java.io.FileNotFoundException;
